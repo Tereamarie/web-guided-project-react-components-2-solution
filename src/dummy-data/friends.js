@@ -5,7 +5,7 @@ export const hello = 'world'
 export default [
   {
     id: uuid(),
-    name: 'Lindsi',
+    name: 'Marta',
     age: 23,
     likes: [
       'hiking',
@@ -21,7 +21,7 @@ export default [
   },
   {
     id: uuid(),
-    name: 'Danielle',
+    name: 'Jonathan',
     age: 27,
     likes: [
       'fishing',
@@ -37,7 +37,7 @@ export default [
   },
   {
     id: uuid(),
-    name: 'Michael',
+    name: 'Wei',
     age: 21,
     likes: [
       'exotic animals',
