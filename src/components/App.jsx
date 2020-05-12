@@ -24,7 +24,6 @@ export default function App() {
 
   return (
     <div className='app-friends container'>
-      <h1>Friends App</h1>
       {/* what does Search need? */}
       {/* it wants a callback to update the search term! */}
       <Search setSearchTerm={setSearchTerm} />

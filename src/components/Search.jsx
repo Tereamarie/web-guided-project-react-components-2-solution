@@ -9,7 +9,7 @@ export default function Search({ setSearchTerm }) {
 
   return (
     <div className='search-friends container'>
-      Search for a friend: <input onChange={changeHandler} />
+      <input onChange={changeHandler} />
     </div>
   )
 }

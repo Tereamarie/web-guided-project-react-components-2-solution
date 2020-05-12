@@ -1,39 +1,75 @@
+@appColor: rgb(145, 0, 0);
+@friendsColor: rgb(0, 145, 0);
+@listFriendsColor: rgb(0, 145, 145);
+@listPetsColor: rgb(0, 0, 145);
+@petColor: rgb(145, 145, 0);
+@searchColor: rgb(145, 0, 145);
+
 * {
   box-sizing: border-box;
 }
 body {
-  background-color: rgb(244, 244, 244);
   color: rgb(65, 75, 60);
   font-family: 'Bitter', serif;
 }
 .container {
-  border: 1px solid rgb(210, 210, 210);
+  border: 2px solid rgb(210, 210, 210);
   box-shadow: 0px 1px 6px -2px rgb(128, 127, 127);
-  margin: 8px;
-  padding: 8px;
-  background-color: white;
+  border-radius: 8px;
+  margin: 16px;
+  padding: 16px 8px 16px 16px;
+  &:hover {
+    box-shadow: 2px 3px 8px 0px rgb(128, 127, 127);
+  }
 }
 .app-friends {
-  border-color: rgb(145, 0, 0);
+  border-color: @appColor;
+  background-color: lighten(@appColor, 65);
+  &:before {
+    content: '❤️ App';
+  }
 }
 .friend-friends {
-  border-color: rgb(0, 145, 0);
+  border-color: @friendsColor;
+  background-color: lighten(@friendsColor, 65);
   margin-top: 32px;
-  background-color: rgb(241, 253, 255);
+  &:before {
+    content: '🌝 Friend';
+  }
 }
 .list-friends {
-  border-color: rgb(0, 145, 145);
+  border-color: @listFriendsColor;
+  background-color: lighten(@listFriendsColor, 65);
+  &:before {
+    content: '[ 🤸‍♂️ 👩 🧏 ] FriendsList';
+  }
 }
 .list-pets-friends {
-  border-color: rgb(0, 0, 145);
+  border-color: @listPetsColor;
+  background-color: lighten(@listPetsColor, 65);
+  &:before {
+    content: '[ 🐈 🐠 🦜 ] PetsList';
+  }
 }
 .pet-friends {
-  border-color: rgb(145, 145, 0);
+  border-color: @petColor;
+  background-color: lighten(@petColor, 65);
+  &:before {
+    content: '🐕 Pet';
+  }
 }
 .search-friends {
-  border-color: rgb(145, 0, 145);
+  border-color: @searchColor;
+  background-color: lighten(@searchColor, 65);
+  &:before {
+    content: '🔍 Search ';
+  }
 }
 .friend-info {
   display: flex;
   justify-content: space-between;
+  
+  @media (max-width: 520px) {
+    flex-direction: column;
+  }
 }

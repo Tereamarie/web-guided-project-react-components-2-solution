@@ -8,7 +8,6 @@ export default function Friend({ friend }) {
 
       <div className='friend-info'>
         <div >
-          <h3>1- General Info</h3>
           <p>Age: {friend.age}</p>
 
           {/* Display something better in the Married area */}
@@ -24,8 +23,6 @@ export default function Friend({ friend }) {
         </div>
 
         <div>
-          <h3>2- Pets</h3>
-
           {/* What does the PetsList need? */}
           {/* What is the exact name of the prop it expects? */}
           {/* Is the pets data around here somewhere so I may pass it? */}
