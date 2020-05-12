@@ -1,10 +1,13 @@
 import React from 'react'
+// 1- We need the Pet component
 import Pet from './Pet'
 
-export default function PetsList({ pets }) {
+export default function PetsList(props) {
+  const { pets } = props
+
   return (
     <div className='list-pets-friends container'>
-      {/* Loop over the pets generating a Pet element as you go */}
+      {/* 2- Loop over the data generating a Pet element as you go */}
       {/* What props does the Pet component expect? */}
       {
         pets.map(pet => <Pet pet={pet} key={pet.id} />)

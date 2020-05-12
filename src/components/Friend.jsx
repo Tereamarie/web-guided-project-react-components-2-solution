@@ -1,7 +1,9 @@
 import React from 'react'
 import PetsList from './PetsList'
 
-export default function Friend({ friend }) {
+export default function Friend(props) {
+  const { friend } = props
+
   return (
     <div className='friend-friends container'>
       <h2>{friend.name}</h2>
@@ -10,11 +12,11 @@ export default function Friend({ friend }) {
         <div >
           <p>Age: {friend.age}</p>
 
-          {/* Display something better in the Married area */}
+          {/* 1- Display something better in the Married area */}
           <p>Married: {friend.married ? 'Yes' : 'No'}</p>
           <div>Likes:
             <ul>
-              {/* Loop over the friend's likes and generate <li/> elements as you go */}
+              {/* 2- Loop over the friend's likes and generate <li/> elements as you go */}
               {friend.likes.map(
                 (like, index) => <li key={index}>{like}</li>
               )}
@@ -23,9 +25,9 @@ export default function Friend({ friend }) {
         </div>
 
         <div>
-          {/* What does the PetsList need? */}
-          {/* What is the exact name of the prop it expects? */}
-          {/* Is the pets data around here somewhere so I may pass it? */}
+          {/* 3- What data does the PetsList need? */}
+          {/* What is the exact name of the prop/props it expects? */}
+          {/* Is the data around here somewhere so I may pass it? */}
           <PetsList pets={friend.pets} />
         </div>
       </div>
