@@ -7,7 +7,7 @@ export default [
     id: uuid(),
     name: 'Marta',
     age: 23,
-    likes: [
+    hobbies: [
       'hiking',
       'netflix',
       'death metal',
@@ -23,7 +23,7 @@ export default [
     id: uuid(),
     name: 'Jonathan',
     age: 27,
-    likes: [
+    hobbies: [
       'fishing',
       'sightseeing',
       'heavy metal',
@@ -39,7 +39,7 @@ export default [
     id: uuid(),
     name: 'Wei',
     age: 21,
-    likes: [
+    hobbies: [
       'exotic animals',
       'bird watching',
       'hiking',

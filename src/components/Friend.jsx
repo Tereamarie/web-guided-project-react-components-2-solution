@@ -20,8 +20,8 @@ export default function Friend(props) {
           <p>Married: {friend.married ? 'Yes' : 'No'}</p>
           <div>Likes:
             <ul>
-              {/* 2- Loop over the friend's likes and generate <li/> elements as you go */}
-              {friend.likes.map(
+              {/* 2- Loop over the friend's hobbies and generate <li/> elements as you go */}
+              {friend.hobbies.map(
                 (like, index) => <li key={index}>{like}</li>
               )}
             </ul>
