@@ -30,6 +30,16 @@ export default function App() {
     })
   }
 
+  const changeStatus = id => {
+    setFriends(friends.map(fr => {
+      if (fr.id == id) {
+        return { ...fr, married: !fr.married}
+      } else {
+        return fr
+      }
+    }))
+  }
+
   return (
     <div className='app-friends container'>
       {/* 5- Render the Search component */}
@@ -38,7 +48,7 @@ export default function App() {
 
       {/* 6- Render the FriendsList component */}
       {/* What prop/props does FriendsList need? */}
-      <FriendsList friends={getFilteredFriends()}/>
+      <FriendsList friends={getFilteredFriends()} changeStatus={changeStatus} />
     </div>
   )
 }

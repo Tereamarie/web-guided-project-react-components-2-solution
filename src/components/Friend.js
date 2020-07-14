@@ -2,7 +2,7 @@ import React from 'react'
 import PetsList from './PetsList'
 
 export default function Friend(props) {
-  const { friend } = props
+  const { friend, changeStatus } = props
 
   if (!friend) return (
     <div className='friend-friends container'></div>
@@ -17,7 +17,7 @@ export default function Friend(props) {
           <p>Age: {friend.age}</p>
 
           {/* 1- Display something better in the Married area */}
-          <p>Married: {friend.married ? 'Yes' : 'No'}</p>
+          <p>Married: {friend.married ? 'Yes' : 'No'} <button onClick={() => changeStatus(friend.id)}>change</button></p>
           <div>Likes:
             <ul>
               {/* 2- Loop over the friend's hobbies and generate <li/> elements as you go */}
