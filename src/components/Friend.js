@@ -10,15 +10,14 @@ export default function Friend(props) {
 
   return (
     <div className='friend-friends container'>
-      <h2>{friend.name}</h2>
-
       <div className='friend-info'>
-        <div >
+        <div>
+          <h3>Name: {friend.name}</h3>
           <p>Age: {friend.age}</p>
 
           {/* 1- Display something better in the Married area */}
           <p>Married: {friend.married ? 'Yes' : 'No'} <button onClick={() => changeStatus(friend.id)}>change</button></p>
-          <div>Likes:
+          <div>Hobbies:
             <ul>
               {/* 2- Loop over the friend's hobbies and generate <li/> elements as you go */}
               {friend.hobbies.map(
