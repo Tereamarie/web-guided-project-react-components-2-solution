@@ -27,8 +27,11 @@
 * Utilizing state-changing callbacks inside event handlers in descendant components.
 * If a callback needs an argument (like an id) then it can't be used directly as an event handler, because those take an event object as their argument.
 * Function wrapping to get around the problem of the previous point.
+* React Developer Tools to inspect props and state.
 
 ## 3- Demo
+
+See the design inside `src/design-files` and explain students what they are building.
 
 Flesh out the various components inside `src/components` following this order:
 
