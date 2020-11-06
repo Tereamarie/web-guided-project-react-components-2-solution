@@ -19,6 +19,7 @@
 * Passing props using attribute-like syntax.
 * Both data and callbacks are routinely passed down through props.
 * State changing callbacks passed through props enable nested components to update state of ancestors.
+* Unidirectional Data Flow.
 * Mapping over an array of objects to produce an array of React elements that render to the screen.
 * The importance of the `key` prop to help React identify each element inside a collection.
 * Booleans do not interpolate to anything visible inside the JSX.
