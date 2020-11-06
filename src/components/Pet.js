@@ -11,5 +11,3 @@ export default function Pet(props) {
     </div>
   )
 }
-
-{/* <Pet pet={{ name: 'goldfish', type: 'fish' }} /> */}
