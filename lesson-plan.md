@@ -2,6 +2,7 @@
 
 ## 1- Preliminaries
 
+* Have students install the Eslint extension for VSCode.
 * Walk the class through the clone, install and start process of the GP repo.
 * Make sure students have installed the React Developer Tools Chrome extension.
 
