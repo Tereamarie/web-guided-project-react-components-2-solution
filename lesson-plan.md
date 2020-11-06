@@ -22,6 +22,7 @@
 * Unidirectional Data Flow.
 * Mapping over an array of objects to produce an array of React elements that render to the screen.
 * The importance of the `key` prop to help React identify each element inside a collection.
+* Do NOT use an array index as `key` just to get rid of the console warning!
 * Booleans do not interpolate to anything visible inside the JSX.
 * Using ternaries or logical expressions to conditionally render elements.
 * Studying the definition of a component to understand what props it expects from the parent.
