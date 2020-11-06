@@ -21,9 +21,5 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/LambdaSchool/web-guided-project-react-components-2-solution.git"
-  },
-  "bugs": {
-    "url": "https://github.com/LambdaSchool/web-guided-project-react-components-2-solution/issues"
-  },
-  "homepage": "https://github.com/LambdaSchool/web-guided-project-react-components-2-solution#readme"
+  }
 }
