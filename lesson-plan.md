@@ -13,14 +13,13 @@
 * E66 Modules: importing another module using a relative path.
 * Initializing component state using a dataset as the initial value.
 * Building a helper that updates a state which is then sent down the tree through props.
-* Using `map` to swap an object inside an array with a new object without mutation.
 * The spread operator and the logical NOT operator.
 * Destructuring assignment.
+* Using `map` to swap an object inside an array with a new object without mutation.
 * Rendering an instance of a component inside the JSX of another component.
 * Passing props using attribute-like syntax.
-* Both data and callbacks are routinely passed down through props.
+* Both data and callbacks are routinely passed down through props. Unidirectional Data Flow.
 * State changing callbacks passed through props enable nested components to update state of ancestors.
-* Unidirectional Data Flow.
 * Mapping over an array of objects to produce an array of React elements that render to the screen.
 * The importance of the `key` prop to help React identify each element inside a collection.
 * Do NOT use an array index as `key` just to get rid of the console warning!
